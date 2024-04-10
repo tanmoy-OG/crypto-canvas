@@ -6,22 +6,22 @@ const NavBar: FC = () => {
       <div className="basis-1/4">
         <Link
           className="my-auto text-3xl font-bold italic text-primary"
-          href=""
+          href="/"
         >
           Crypto Canvas
         </Link>
       </div>
       <div className="flex basis-2/4 justify-center space-x-10">
-        <Link className="my-auto" href="">
+        <Link className="my-auto" href="/top-art">
           Top Art
         </Link>
-        <Link className="my-auto" href="">
+        <Link className="my-auto" href="/top-artist">
           Top Artist
         </Link>
-        <Link className="my-auto" href="">
+        <Link className="my-auto" href="/my-nft">
           My NFT
         </Link>
-        <Link className="my-auto" href="">
+        <Link className="my-auto" href="/my-wishlist">
           Wishlist
         </Link>
         <div className="rounded-md bg-secondary px-6 py-2">Search</div>
