@@ -9,7 +9,8 @@ import {
 import { Button } from "@/ui/button";
 import { Card, CardContent } from "@/ui/card";
 
-const Purchase = () => {
+const Purchase = ({params}:{params:{id:string}}) => {
+  console.log(params.id);
   return (
     <main className="mt-12 flex px-40">
       <Card className="size-fit basis-1/3 border-none p-0">
