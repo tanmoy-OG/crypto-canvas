@@ -1,15 +1,16 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 import { FC } from "react";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/ui/carousel";
 
 // import slide_image from "@/assets/nepo.jpg";
 
@@ -31,18 +32,24 @@ const Carousal: FC = () => {
         <CarouselContent>
           {Array.from({ length: 10 }).map((_, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
-                <Card className="p-0">
+              <div className="p-8">
+                <Card className="border-none p-0">
                   <CardContent className="p-0">
-                    <img alt="" className="w-full rounded-lg" src="/nepo.jpg" />
+                    <Image
+                      alt=""
+                      className="rounded-lg"
+                      height={400}
+                      src="/nepo.jpg"
+                      width={400}
+                    />
                   </CardContent>
                 </Card>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="border-none bg-primary" />
+        <CarouselNext className="border-none bg-primary" />
       </Carousel>
     </div>
   );
