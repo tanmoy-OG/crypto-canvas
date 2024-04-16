@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { FC } from "react";
+
+import Cart from "./cart";
+import SignUp from "./sign-up";
+
 const NavBar: FC = () => {
   return (
     <nav className="flex w-full justify-between px-8 py-4">
@@ -26,10 +30,9 @@ const NavBar: FC = () => {
         </Link>
         <div className="rounded-md bg-secondary px-6 py-2">Search</div>
       </div>
-      <div className="flex basis-1/4 justify-end">
-        <Link className="rounded-md bg-primary px-6 py-2" href="">
-          Sign Up
-        </Link>
+      <div className="flex basis-1/4 justify-end gap-4">
+        <Cart />
+        <SignUp />
       </div>
     </nav>
   );

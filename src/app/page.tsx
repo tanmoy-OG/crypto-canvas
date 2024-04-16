@@ -3,8 +3,6 @@ import Link from "next/link";
 
 import Carousal from "components/landing/carousal";
 
-
-
 const Home = () => {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -18,20 +16,13 @@ const Home = () => {
             <Link key={i} href={`/purchase/${i}`}>
               <Image
                 alt=""
-                className="my-2 rounded-lg"
+                className="my-2 aspect-square rounded-lg object-cover hover:scale-105 hover:transition-transform"
                 height={200}
                 src="/nepo.jpg"
                 width={200}
               />
             </Link>
           ))}
-          <Image
-            alt=""
-            className="my-2 rounded-lg"
-            height={200}
-            src="/nepo.jpg"
-            width={200}
-          />
         </div>
       </div>
     </main>
