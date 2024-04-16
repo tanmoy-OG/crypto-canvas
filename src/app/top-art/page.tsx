@@ -11,7 +11,7 @@ const TopArt = () => {
           <Link key={i} href={`/purchase/${i}`}>
             <Image
               alt=""
-              className="my-2 rounded-lg"
+              className="my-2 aspect-square rounded-lg object-cover hover:scale-105 hover:transition-transform"
               height={200}
               src="/nepo.jpg"
               width={200}

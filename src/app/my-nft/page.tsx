@@ -67,7 +67,7 @@ const MyNFT = () => {
                   <CardContent className="p-0">
                     <Image
                       alt=""
-                      className="rounded-lg"
+                      className="my-2 aspect-square rounded-lg object-cover"
                       height={200}
                       src="/nepo.jpg"
                       width={200}
